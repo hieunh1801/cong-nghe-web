@@ -13,13 +13,24 @@
 ## 1 - Tạo Database
 
 ## 2 - Tạo ứng dụng WebApplication
-### 2.1: Tạo kết nối tới Database
-- Sử dụng Connect Existing Database
+### Cài đặt EF6
+- Tools -> NuGet Package Manager -> Package manager console
+- Pase dòng sau vào console và enter: Install-Package EntityFramework -Version 6.2.0
 
-### 2.2: Tạo Model
+### Tạo kết nối tới Database
+- Chuột phải vào Models
+- Chọn Add -> new Items
+- Bảng chọn bên trái chọn Data -> ADO.NET Entity Data Model -> OK 
+- Trong Entity Data Model Winzard chọn Code first from database -> chọn next -> New Connections - Trong Connections Properties
+  + Server name: là tên SQL trong SQL server - VTP-NGUYENHIEU\SQLEXPRESS
+  + Connect to datbase: tên của database 
+- Chọn Next -> Chọn table -> Finish
+
+### Tạo Model
 - New -> Item -> Data -> ADO.Net. ... 
 
-### 2.3: Tạo Controller 
+### Tạo Controller 
 Cách 1: Tạo cả View và các thứ khác
 - New -> Controller -> Controller, View ...
 Cách 2: Tạo Controller rỗng
+

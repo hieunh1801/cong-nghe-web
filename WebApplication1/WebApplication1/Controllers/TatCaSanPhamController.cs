@@ -11,7 +11,9 @@ namespace WebApplication1.Controllers
         // GET: TatCaSanPham
         public ActionResult Index()
         {
+
             return View();
         }
+        
     }
 }
