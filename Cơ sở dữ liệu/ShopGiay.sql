@@ -83,6 +83,7 @@ create table ShoesDetail
 	active bit,
 	quantity int,
 	urlImage ntext,
+	attibuteValue nvarchar(50),
 
 	primary key(idShoesDetail),
 	foreign key(idAttribute) references Attribute(idAttribute),
@@ -104,8 +105,7 @@ create table Cart
 
 -------------- Thêm dữ liệu -------------------
 USE ShopGiayCongNgheWeb
-insert into Vendor
-	(nameOfVendor, address, phoneNumber)
+insert into Vendor(nameOfVendor, address, phoneNumber)
 values
 (N'Adidas', N'China', 123456789),
 (N'Nike', N'China', 123456789),
@@ -125,8 +125,7 @@ go
 insert into Attribute (attributeName)
 values (N'Size'),(N'Color')
 
-insert into Account
-	(username, password, role)
+insert into Account(username, password, role)
 values
 (N'Hieu', '123', 'customer'),
 (N'Hau', '123', 'customer'),

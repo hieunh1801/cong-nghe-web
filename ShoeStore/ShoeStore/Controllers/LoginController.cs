@@ -13,5 +13,14 @@ namespace ShoeStore.Controllers
         {
             return View();
         }
+
+        public ActionResult LoginResult(string username, string password)
+        {
+            if (username == "hieunh1801@gmail.com" && password == "123")
+            {
+                return Content("Login success");
+            } else
+            return RedirectToAction("Index");
+        }
     }
 }

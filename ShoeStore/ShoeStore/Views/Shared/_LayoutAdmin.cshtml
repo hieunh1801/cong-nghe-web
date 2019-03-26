@@ -22,20 +22,9 @@
 </head>
 <body>
     <div class="site-wrap">
-        @{
-            var headerPartialView = Html.Partial("_Header");
-            headerPartialView = new MvcHtmlString(headerPartialView.ToString());
-            var footerPartialView = Html.Partial("_Footer");
-            footerPartialView = new MvcHtmlString(footerPartialView.ToString());
-        }
-        <!--Header-->
-        @headerPartialView
 
-        <!--Body-->
         @RenderBody()
 
-        <!--Footer-->
-        @footerPartialView
     </div>
 
     <script src="~/Content/js/jquery-3.3.1.min.js"></script>
