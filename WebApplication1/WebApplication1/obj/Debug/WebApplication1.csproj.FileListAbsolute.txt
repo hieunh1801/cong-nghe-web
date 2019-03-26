@@ -238,3 +238,7 @@ C:\Users\hieun\Desktop\BTL CN Web\WebApplication1\WebApplication1\obj\Debug\WebA
 C:\Users\hieun\Desktop\BTL CN Web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\hieun\Desktop\BTL CN Web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\hieun\Desktop\BTL CN Web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\hieun\Desktop\BTL CN Web\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\hieun\Desktop\BTL CN Web\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\hieun\Desktop\BTL CN Web\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\hieun\Desktop\BTL CN Web\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml

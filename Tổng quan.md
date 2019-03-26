@@ -34,3 +34,5 @@ Cách 1: Tạo cả View và các thứ khác
 - New -> Controller -> Controller, View ...
 Cách 2: Tạo Controller rỗng
 
+### Yêu cầu
+- Tách View chính thành các partial View.

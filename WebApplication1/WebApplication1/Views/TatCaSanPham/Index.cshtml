@@ -1,8 +1,42 @@
-﻿
+﻿@model IEnumerable<WebApplication1.Models.Sho>
 @{
     ViewBag.Title = "View";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<div class="container-fluid">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idShoes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.descriptions)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.active)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.defaultUrlImage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idCategory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idVendor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.price)
+            </th>
+
+        </tr>
+    </table>
+</div>
+
+
+
+
+
 
 
 <div class="bg-light py-3">
