@@ -1,0 +1,49 @@
+﻿@model IEnumerable<ShoeStore.Models.Sho>
+
+@if(ViewBag.ListShoes != null){
+    var listShoes = ViewBag.ListShoes;
+    int counter = 0;
+<div class="site-section block-3 site-blocks-2 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7 site-section-heading text-center pt-4">
+                <h2>Feature Product</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="nonloop-block-3 owl-carousel">
+                    @foreach (var shoes in listShoes)
+                    {
+                        var id = shoes.idShoes;
+                        var name = shoes.name;
+                        var description = shoes.descriptions;
+                        var imgUrl = shoes.defaultUrlImage;
+                        var price = shoes.price;
+                        if (counter >= 8) {
+                            break;
+                        } else
+                        {
+                            counter = counter + 1;
+                        }
+                        <div class="item">
+                            <div class="block-4 text-center">
+                                <figure class="block-4-image">
+                                    <img src="@imgUrl" alt="Image placeholder" class="img-fluid">
+                                </figure>
+                                <div class="block-4-text p-4">
+                                    <h3 class="productName"><a href="#">@name</a></h3>
+                                    <p class="productDescription mb-0">@description</p>
+                                    <p class="text-primary font-weight-bold">$@price</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}
